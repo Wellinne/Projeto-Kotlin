@@ -2,6 +2,7 @@ package nascimento.wellinne.loginproject
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import nascimento.wellinne.loginproject.databinding.ActivityMainBinding
@@ -12,8 +13,36 @@ class MainActivity : ComponentActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        Log.d("test", "onCreate")
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+    }
+
+    override fun onStart(){
+        super.onStart()
+        Log.d("test", "onStart")
+    }
+
+    override fun onResume(){
+        super.onResume()
+        Log.d("test", "onResume")
+    }
+
+    override fun onPause(){
+        super.onPause()
+        Log.d("test", "onPause")
+    }
+
+    override fun onStop(){
+        super.onStop()
+        Log.d("test", "onStop")
+    }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.d("test", "onDestroy")
     }
 
     private fun checkCredentials(email: String, password: String): Boolean{
