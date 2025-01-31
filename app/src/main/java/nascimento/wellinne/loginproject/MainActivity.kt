@@ -46,7 +46,8 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun checkCredentials(email: String, password: String): Boolean{
-        return email == "admin@cin.ufpe.br" && password == "admin"
+        //return email == "admin@cin.ufpe.br" && password == "admin"
+        return email == "a" && password == "a"
     }
 
     fun login(view: View?){
