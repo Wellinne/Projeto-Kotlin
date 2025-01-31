@@ -7,4 +7,8 @@
     <string name="email">Email</string>
     <string name="user">Usuário:</string>
     <string name="logged_in">Logado em </string>
+    <string name="gasolina">Gasolina</string>
+    <string name="porcentagem">Porcentagem</string>
+    <string name="button_calculo">Calcular</string>
+    <string name="buttonIrTelaCalculo">Calcular gasolina</string>
 </resources>
