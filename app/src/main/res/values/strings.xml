@@ -8,7 +8,8 @@
     <string name="user">Usuário:</string>
     <string name="logged_in">Logado em </string>
     <string name="gasolina">Gasolina</string>
-    <string name="porcentagem">Porcentagem</string>
+    <string name="etanol">Etanol</string>
     <string name="button_calculo">Calcular</string>
-    <string name="buttonIrTelaCalculo">Calcular gasolina</string>
+    <string name="buttonIrTelaCalculo">Calcular gasolina e etanol</string>
+    <string name="voltar">Voltar</string>
 </resources>

@@ -27,11 +27,13 @@ class SecondActivity : Activity(), OnClickListener {
     override fun onClick(p0: View?) {
         when(p0?.id){
             R.id.buttonHome -> {
+                val user = intent.getStringExtra("USER")
+                val dateHour = intent.getStringExtra("DATE_HOUR")
                 val intent = Intent(this, ThirdActivity::class.java)
-                intent.putExtra("USER", "Oi")
+                intent.putExtra("USER", user)
+                intent.putExtra("DATE_HOUR", dateHour)
                 startActivity(intent)
-                print(intent)
-                finish()
+               finish()
             }
         }
     }

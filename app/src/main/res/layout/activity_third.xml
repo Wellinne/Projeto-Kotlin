@@ -11,35 +11,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/gasolina"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textColor="@color/red_dark"
         android:backgroundTint="@color/red_dark"
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true"/>
 
     <EditText
-        android:id="@+id/edtPorcentagem"
+        android:id="@+id/edtEtanol"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/porcentagem"
-        android:inputType="number"
+        android:hint="@string/etanol"
+        android:inputType="numberDecimal"
         android:textColor="@color/red_dark"
         android:backgroundTint="@color/red_dark"
         android:layout_below="@id/edtGasolina"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/buttonCalculo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/red_dark"
-        android:minWidth="250dp"
-        android:onClick="calculo"
-        android:text="@string/button_calculo"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:layout_below="@id/edtPorcentagem"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 
@@ -49,5 +35,31 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonCalculo"
         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonCalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:minWidth="250dp"
+        android:text="@string/button_calculo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/edtEtanol"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red_dark"
+        android:minWidth="250dp"
+        android:text="@string/voltar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/buttonCalculo"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>
