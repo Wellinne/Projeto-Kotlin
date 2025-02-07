@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">LoginProject</string>
     <string name="welcome">Bem Vindo!</string>
+    <string name="cadastro">Faça seu cadastro</string>
     <string name="login">Login</string>
     <string name="cin_logo">Logo do CIn</string>
     <string name="password">Senha</string>
     <string name="email">Email</string>
+    <string name="nome">Nome</string>
     <string name="user">Usuário:</string>
     <string name="logged_in">Logado em </string>
     <string name="gasolina">Gasolina</string>

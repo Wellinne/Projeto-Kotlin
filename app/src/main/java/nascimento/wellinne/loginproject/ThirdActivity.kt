@@ -41,11 +41,9 @@ class ThirdActivity : ComponentActivity(), OnClickListener {
 
                     val resultado = resultCalculo(gasolina, etanol)
                     if (resultado < 0.7) {
-                        binding.textCalculo.text =
-                            "Melhor abastecer com Etanol (Rácio: %.2f)".format(resultado)
+                        binding.textCalculo.text = "É melhor o etanol"
                     } else {
-                        binding.textCalculo.text =
-                            "Melhor abastecer com Gasolina (Rácio: %.2f)".format(resultado)
+                        binding.textCalculo.text = "É melhor a gasolina"
                     }
                 }
                 R.id.buttonVoltar -> {

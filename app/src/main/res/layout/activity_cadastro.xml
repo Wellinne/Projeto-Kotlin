@@ -20,13 +20,27 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:gravity="center"
-        android:text="@string/welcome"
+        android:text="@string/cadastro"
         android:textColor="@color/red_dark"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/edtEmailAddress"
+        android:id="@+id/edtCadastroNome"
+        android:layout_width="wrap_content"
+        android:minWidth="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textCapCharacters"
+        android:hint="@string/nome"
+        android:textColor="@color/red_dark"
+        android:backgroundTint="@color/red_dark"
+        android:autofillHints="emailAddress"
+        android:textColorHint="@color/red_dark"/>
+
+    <EditText
+        android:id="@+id/edtCadastroEmailAddress"
         android:layout_width="wrap_content"
         android:minWidth="250dp"
         android:layout_height="wrap_content"
@@ -40,7 +54,7 @@
         android:textColorHint="@color/red_dark"/>
 
     <EditText
-        android:id="@+id/edtPassword"
+        android:id="@+id/edtCadastroPassword"
         android:layout_width="wrap_content"
         android:minWidth="250dp"
         android:layout_height="wrap_content"
@@ -54,19 +68,7 @@
         android:textColorHint="@color/red_dark"/>
 
     <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="wrap_content"
-        android:minWidth="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/login"
-        android:background="@color/red_dark"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:onClick="login"/>
-
-    <Button
-        android:id="@+id/btnCadastroLogin"
+        android:id="@+id/btnCadastrar"
         android:layout_width="wrap_content"
         android:minWidth="250dp"
         android:layout_height="wrap_content"
@@ -74,6 +76,16 @@
         android:text="@string/cadastro"
         android:background="@color/red_dark"
         android:textColor="@color/white"
-        android:textSize="18sp"
-        android:onClick="cadastro"/>
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnVoltarCadastro"
+        android:layout_width="wrap_content"
+        android:minWidth="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/voltar"
+        android:background="@color/red_dark"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
 </LinearLayout>
